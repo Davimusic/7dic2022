@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/c.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css' ) }}">
+    <title>Document</title>
+</head>
+<body onload="arranque()">
+    <!--div style="display:block;">
+        <div id="div" onclick="nuevaOpcionModal(this.id)">div</div>
+        <div id="div2" onclick="nuevaOpcionModal(this.id)">texto</div>
+        <div style="height: 200px; width: 200px; background: blue;" id="padre" onclick="eventoUnico(this.id, 'click', 'actualizarBloqueEnUso(`padre`)-ActivarModal()')">
+            <h1 id="texto" onclick="eventoUnico(this.id, 'click', `actualizarBloqueEnUso('${this.id}')-ActivarModal()`)">Lorem ipsum dolor sit amet.</h1>
+            <div style="height: 100px; width: 100px; background: rgb(137, 137, 165);" onclick="eventoUnico(this.id, 'click', 'actualizarBloqueEnUso(`hijo`)-ActivarModal()')" id="hijo"></div>
+        </div>
+        <br>
+        <button onclick="ActivarModal('id')">modal</button-->
+        
+        <div id="padreMenu" style="background:#1e7070; height: 40px; overflow-y: auto;"> 
+        </div>    
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/arranque.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bloque.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/modal.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/prueba.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/menu.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/micropartesComponentes.js') }}"></script>
+
+
+</html>
